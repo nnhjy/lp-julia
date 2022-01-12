@@ -1,4 +1,4 @@
-# Exercise Notebooks for Course MS-E2121 - Linear Optimization D, Lecture, 11.1.2022-7.4.2022
+# Exercise for Course MS-E2121 - Linear Optimization D at Aalto University
 
 ## Installing Julia
 

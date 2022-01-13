@@ -18,7 +18,7 @@ download and extract the necessary files:
 ```bash
 wget https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.5-linux-x86_64.tar.gz
 tar zxvf julia-1.6.5-linux-x86_64.tar.gz
-export PATH="$PATH:~/julia-1.6.2/bin"
+export PATH="$PATH:~/julia-1.6.5/bin"
 ```
 
 To use Julia later, you will need to add the following line to the `.bashrc` file in your home folder.
@@ -35,6 +35,14 @@ Install the `IJulia` package by pasting the following two:
 using Pkg
 Pkg.add("IJulia")
 ```
+
+Renew the julia kernel in notebook
+```julia
+using Pkg
+Pkg.update()
+Pkg.build("IJulia")
+```
+
 You may also want to install these packages, which we tend to use in a lot of the lecture materials
 ```julia
 Pkg.add("Plots")

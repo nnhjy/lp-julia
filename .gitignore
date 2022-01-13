@@ -26,3 +26,4 @@ Manifest.toml
 # Other files to be ignored
 .vscode
 .idea
+.ipynb_checkpoints/

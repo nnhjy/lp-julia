@@ -9,9 +9,12 @@ First, [download the current release of Julia](http://julialang.org/downloads/).
 **Windows**: Run the installer. Then open the Julia application (double-click on it); a window with a julia> prompt will appear.
 
 Change the julia executable to which the command `julia` points:
-1. System environment variable: Control Panel\All Control Panel Items\System --> Advanced system settings --> Advanced --> Environmental Variables --> Edit in `Path`
-2. User environment variable: Search `environment variables` in the Windows taskbar --> "Edit environment variable for your account" --> Edit in `Path`
-3. **Edit** in `Path`: Click `New` to add `X:\directory\to\Julia-x.x.x\bin` and delete the directory for old versions
+1. System environment variable (if you install Julia for all users):
+"Control Panel\All Control Panel Items\System --> Advanced system settings --> Advanced --> Environmental Variables --> Edit in `Path`" 
+    - under "User variables for `administrator_username`" only for the administrator, under "System variables" for all users)
+2. User environment variable (if you install Julia for the current user): 
+Search `environment variables` in the Windows taskbar --> "Edit environment variable for your account" --> Edit in `Path` under "User variables for `the_current_username`"
+3. **Edit in `Path`**: Click `New` to add `X:\directory\to\Julia-x.x.x\bin` and delete the directory for old versions
 
 *Check environment variables*: In `Command Prompt` type `path`. In normal mode, it shows the variables for the user, and in administrator mode the system variables.
 
